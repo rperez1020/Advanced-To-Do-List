@@ -21,7 +21,7 @@ list.addEventListener('change', e => {
 list.addEventListener('click', e =>{
     if(!e.target.matches('[data-button-delete'))return
 
-    const parent = e.target.closes('.list-item')
+    const parent = e.target.closest('.list-item')
     const todoId = parent.dataset.todoId
 
     parent.remove()
